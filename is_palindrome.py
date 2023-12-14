@@ -22,6 +22,6 @@ def check_for_title(word):
         print(f'{word} should be {word.title()}')
         
 if __name__ == "__main__":
-    #is_palindrome('eric')
-    #is_anagram('save', 'evas')
+    is_palindrome('eric')
+    is_anagram('save', 'evas')
     check_for_title('eric mwakazi')
