@@ -1,4 +1,4 @@
-# Checks if string is palindrome,anagram
+# Checks if string is palindrome,anagram,check titlecase
 from collections import Counter
 
 
@@ -15,6 +15,13 @@ def is_anagram(word1, word2):
     else:
         print(f'{word1} and {word2} are not anagrams')
         
+def check_for_title(word):
+    if word.istitle():
+        print(f'{word} is in tittle case')
+    else:
+        print(f'{word} should be {word.title()}')
+        
 if __name__ == "__main__":
     #is_palindrome('eric')
-    is_anagram('save', 'evas')
+    #is_anagram('save', 'evas')
+    check_for_title('eric mwakazi')
